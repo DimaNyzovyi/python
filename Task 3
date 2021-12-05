@@ -1,0 +1,12 @@
+ames = []
+game = input("Введи игру (0 - остановить ввод):").lower()
+ 
+while game != "0":
+    if game in games:
+        print("Эта игра уже записана")
+        game = input("Введи игру (0 - остановить ввод):").lower()
+    else:
+        games.append(game)
+        game = input("Введи игру (0 - остановить ввод):").lower()
+games.sort()
+print("Список игр:", games)
