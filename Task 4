@@ -1,0 +1,8 @@
+mark =-1
+marks = []
+while mark != 0:
+    mark = int(input("Введи балл (0 - останновить ввод):"))
+    marks.append(mark)
+marks.pop(-1)
+print("Список оценок:", marks)
+print ("Успеваемость:",(marks.count(5)+marks.count(4)+marks.count(3))/len(marks) * 100)
