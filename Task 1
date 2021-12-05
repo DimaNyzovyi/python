@@ -1,0 +1,12 @@
+users = ['max123', 'sweet_girl', 'funIvan', 'crazy.cat']
+#сортировка списка учеников
+users.sort()
+#всего учеников
+amount_users = len(users)
+#красивая печать списка учеников
+i = 1
+print('Список пользователей:')
+for user in users:
+   print(i, '-', user)
+   i += 1
+print('Всего пользователей:', amount_users)
