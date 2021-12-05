@@ -1,0 +1,4 @@
+games = ['dota 2', 'cs go', 'warface', 'minecraft']
+searching = input('Запрос:').lower()
+if searching in games: print("Запрос найден в пожеланиях")
+else:                   print("Такого пожелания нет")
